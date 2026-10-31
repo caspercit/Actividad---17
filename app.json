@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "LibroVista",
+    "slug": "actividad17-librovista",
+    "scheme": "librovista",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F8F7F3",
+    "android": {
+      "package": "com.actividad17.librovista",
+      "adaptiveIcon": {
+        "backgroundColor": "#123331"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.actividad17.librovista"
+    },
+    "extra": {
+      "apiProvider": "Open Library",
+      "apiBaseUrl": "https://openlibrary.org/search.json"
+    }
+  }
+}

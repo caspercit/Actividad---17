@@ -1,0 +1,62 @@
+
+> actividad17-librovista@1.0.0 test
+> node --test tests/*.test.cjs
+
+TAP version 13
+# Subtest: CP-01: GET exitoso, parametro codificado, campos interpretados
+ok 1 - CP-01: GET exitoso, parametro codificado, campos interpretados
+  ---
+  duration_ms: 1.83191
+  type: 'test'
+  ...
+# Subtest: CP-02: respuesta valida sin resultados, estado vacio sin falla
+ok 2 - CP-02: respuesta valida sin resultados, estado vacio sin falla
+  ---
+  duration_ms: 1.102443
+  type: 'test'
+  ...
+# Subtest: SEG-01: no admite consultas de un caracter o solo espacios
+ok 3 - SEG-01: no admite consultas de un caracter o solo espacios
+  ---
+  duration_ms: 0.549359
+  type: 'test'
+  ...
+# Subtest: SEG-02: restringe longitud y caracteres de control o HTML
+ok 4 - SEG-02: restringe longitud y caracteres de control o HTML
+  ---
+  duration_ms: 0.134751
+  type: 'test'
+  ...
+# Subtest: ROB-01: libro sin autor, año ni portada usa valores seguros
+ok 5 - ROB-01: libro sin autor, año ni portada usa valores seguros
+  ---
+  duration_ms: 0.299857
+  type: 'test'
+  ...
+# Subtest: ROB-02: HTTP 429 se informa sin reintentos automáticos
+ok 6 - ROB-02: HTTP 429 se informa sin reintentos automáticos
+  ---
+  duration_ms: 1.57942
+  type: 'test'
+  ...
+# Subtest: ROB-03: interrupcion de red muestra error legible
+ok 7 - ROB-03: interrupcion de red muestra error legible
+  ---
+  duration_ms: 0.224986
+  type: 'test'
+  ...
+# Subtest: ROB-04: JSON sin docs se rechaza y evita error en UI
+ok 8 - ROB-04: JSON sin docs se rechaza y evita error en UI
+  ---
+  duration_ms: 0.19484
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 71.167502
